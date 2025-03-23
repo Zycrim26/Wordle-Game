@@ -34,7 +34,7 @@ public class WordManager : MonoBehaviour
                 if ((x + y) % 2 == 0)
                     letter.SetColor(Color.blue);
                 else
-                    letter.SetColor(new Color(173, 216, 230));
+                    letter.SetColor(Color.cyan);
             }
         }
     }
