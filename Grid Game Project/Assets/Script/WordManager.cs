@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using TMPro;
+using System.Linq;
 
 public class WordManager : MonoBehaviour
 {
@@ -13,15 +15,21 @@ public class WordManager : MonoBehaviour
     public float xPadding = 0.1f;
     public float yPadding = 0.1f;
 
+    public Color oddColor;
+    public Color evenColor;
+
+    public GameObject GM;
+
     [SerializeField] private LetterScript letterPrefab;
     //[SerializeField] 
 
-    private void Start()
+    public void FixedUpdate()
     {
-        InitGrid();
+        
     }
+
     // Update is called once per frame
-    void InitGrid()
+    public void InitGrid()
     {
         for (int x = 0; x < numCols; x++)
         {
@@ -32,9 +40,9 @@ public class WordManager : MonoBehaviour
                 letter.transform.localPosition = letterPos;
                 letter.name = $"Letter_{x}_{y}";
                 if ((x + y) % 2 == 0)
-                    letter.SetColor(Color.blue);
+                    letter.SetColor(evenColor);
                 else
-                    letter.SetColor(new Color(173, 216, 230));
+                    letter.SetColor(oddColor);
             }
         }
     }
