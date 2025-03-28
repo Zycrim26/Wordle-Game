@@ -107,8 +107,6 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                Debug.Log(guessInput.text.Length);
-                //Debug.Log(inputTxt.text);
                 if (guessInput.text.Length == 5)
                 {
                     CheckGuess();
@@ -116,8 +114,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log("Didn't");
-                    //Add an insuficient word length notification
+        
                 }
             }
         }
