@@ -107,14 +107,16 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return))
             {
-                if (guessInput.text.Length == 5)
+                if (guessInput.text.Length == 5 && guessInput.text.Substring(4) != "\n")
                 {
                     CheckGuess();
+                    guessInput.text = "";
 
                 }
                 else
                 {
-        
+                    guessInput.text = "";
+                    //Insuficient letters notice
                 }
             }
         }
