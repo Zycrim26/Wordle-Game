@@ -1341,7 +1341,6 @@ MonoBehaviour:
   maxTime: 120
   timePointMulti: 1.025
   rowPointMulti: 10
-  highScore: 0
   redCol: {r: 0.6754716, g: 0.17205401, b: 0.17205401, a: 1}
   yellowCol: {r: 0.8037735, g: 0.7157812, b: 0.32605904, a: 1}
   greenCol: {r: 0.34427288, g: 0.6150943, b: 0.28201488, a: 1}
@@ -2148,7 +2147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1557407553
 MonoBehaviour:
   m_ObjectHideFlags: 0
